@@ -33,7 +33,7 @@ export default function HeroCanvas() {
       <Canvas
         camera={{ position: [0, 0, isMobile ? 10 : 8], fov: isMobile ? 60 : 50 }}
         gl={{ antialias: !isMobile, alpha: true, powerPreference: 'high-performance' }}
-        dpr={isMobile ? [1, 1] : [1, 2]}
+        dpr={isMobile ? [1, 1.5] : [1, 2]}
         style={{ background: 'transparent' }}
       >
         <ambientLight intensity={0.1} />
